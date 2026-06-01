@@ -16,7 +16,7 @@ int main(void) {
     }
 
     for (size_t i = 0; i < list->count; i++) {
-        writer(list); // or writer(&list->file[i]) depending on design
+        writer(list);
     }
 
     for (size_t i = 0; i < list->count; i++) {
