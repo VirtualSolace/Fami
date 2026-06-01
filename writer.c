@@ -32,7 +32,7 @@ int writer(FileList *list)
         return -1;
     }
 
-    /* Read exactly size bytes */
+    // Read exactly size bytes
     while (total_read < size) {
         bytes_read = read(fd,
                           buffer + total_read,
@@ -50,7 +50,7 @@ int writer(FileList *list)
 
     close(fd);
 
-    /* Write exactly total_read bytes */
+    // Write exactly total_read bytes
     while (total_written < total_read) {
         bytes_written = write(target,
                               buffer + total_written,
